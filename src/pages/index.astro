@@ -4,7 +4,12 @@ import arbres from '../assets/arbres.svg';
 import './_index.scss';
 ---
 
-<Layout pageTitle="" description="" id="home-page" path="/">
+<Layout
+  pageTitle="Jardin Papillon"
+  description="Arnaud Deboes, jardin en permaculture à Faverges"
+  id="home-page"
+  path="/"
+>
   <main>
     <h1>LE JARDIN PAPILLON <br /> DU LACHAT</h1>
     <div id="content-container">
@@ -34,7 +39,15 @@ import './_index.scss';
         vies et de façon d'être, et où s'éveiller à l'observation de notre
         environnement, qu'il soit sauvage ou cultivé.
       </p>
-      <img src={arbres.src} alt="arbres" class="arbre_divider" />
+      <img
+        src={arbres.src}
+        alt="arbres"
+        class="arbre_divider"
+        loading="lazy"
+        alt="Rangée d'arbre"
+        aria-hidden="true"
+        role="presentation"
+      />
       <div id="subcontent">
         <h2>LA BOUCLE DES SAVOIRS FAIRE</h2>
         <p>
@@ -45,23 +58,33 @@ import './_index.scss';
           pratiques. De quoi éveiller la curiosité des petits et des grands !
         </p>
         <p class="info">
-          Les mercredis à 14h. Les jeudis et samedis à 16h. Prix libre, sans réservation !
+          Les mercredis à 14h. Les jeudis et samedis à 16h. Prix libre, sans
+          réservation !
         </p>
         <h2>VISITE ANIMÉE</h2>
         <p>
-          Visite approfondie d’environ 1h30 permettant d'aller plus avant
-          dans la découverte des différents éléments du site, les jeux et les
-          explications sur la permaculture. Ce format vous propose aussi un atelier pratique : à
-          vous de mettre les mains dans la terre et participer à la vie du
-          jardin en semant, récoltant, taillant, plantant, etc. Idéal pour apprendre
-          quelques premiers gestes de permaculture et partager votre énergie au
-          lieu !
+          Visite approfondie d’environ 1h30 permettant d'aller plus avant dans
+          la découverte des différents éléments du site, les jeux et les
+          explications sur la permaculture. Ce format vous propose aussi un
+          atelier pratique : à vous de mettre les mains dans la terre et
+          participer à la vie du jardin en semant, récoltant, taillant,
+          plantant, etc. Idéal pour apprendre quelques premiers gestes de
+          permaculture et partager votre énergie au lieu !
         </p>
         <p class="info">
-          Les jeudis et samedis après-midis. Sur réservation ! Maximum 15personnes, 50€/groupe.
+          Les jeudis et samedis après-midis. Sur réservation ! Maximum
+          15personnes, 50€/groupe.
         </p>
       </div>
-      <img src={arbres.src} alt="arbres" class="arbre_divider" />
+      <img
+        src={arbres.src}
+        alt="arbres"
+        class="arbre_divider"
+        loading="lazy"
+        alt="Rangée d'arbre"
+        aria-hidden="true"
+        role="presentation"
+      />
     </div>
   </main>
 </Layout>

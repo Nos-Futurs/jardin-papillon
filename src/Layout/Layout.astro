@@ -1,13 +1,13 @@
 ---
 import './Layout.scss';
 import Footer from '../components/Footer/Footer.astro';
-import tree from "../assets/tree.svg"
-import papillon from "../assets/papillon.svg"
-import feuille from "../assets/feuille.svg"
-import poule from "../assets/poule.svg"
-import lapin from "../assets/lapin.svg"
-import nuage from "../assets/nuage.svg"
-import oiseaux from "../assets/oiseaux.svg"
+import tree from '../assets/tree.svg';
+import papillon from '../assets/papillon.svg';
+import feuille from '../assets/feuille.svg';
+import poule from '../assets/poule.svg';
+import lapin from '../assets/lapin.svg';
+import nuage from '../assets/nuage.svg';
+import oiseaux from '../assets/oiseaux.svg';
 import ParallaxFeuille from '../components/ParallaxFeuille/ParallaxFeuille';
 
 interface Props {
@@ -29,45 +29,46 @@ const { id, path, pageTitle, description, noindex } = Astro.props;
     <title>{pageTitle}</title>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
-    {noindex && <meta name="robots" content="noindex" />}
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
-    <link
-      rel="canonical"
-      href={`https://gestalt.philippe.peharpre.fr${path}`}
-    />
-    <!-- <link rel="icon" type="image/png" href={logo.src} /> -->
+    <link rel="canonical" href={`https:/jardin-papillon.fr${path}`} />
+    <link rel="icon" type="image/png" href={papillon.src} />
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <script type="application/ld+json">
-      [
-        {
-          "@context": "http://schema.org",
-          "@type": "WebSite",
-          "name": "Philippe Péharpré, praticien en Gestalt Thérapie à Saint Malo.",
-          "url": "https://gestalt.philippe.peharpre.fr/"
-        },
-        {
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "url": "https://gestalt.philippe.peharpre.fr/",
-          "name": "Tro Vale",
-          "description": "Tro Vale, Philippe Péharpré, praticien en Gestalt Thérapie à Saint Malo.",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "email": "contact.peharpre@gmail.com"
-          }
-        }
-      ]
-    </script>
   </head>
   <body>
-    <img id="nuage1" src={nuage.src}/>
-    <img id="nuage2" src={nuage.src}/>
-    <img id="oiseaux" src={oiseaux.src}/>
-    <img id="papillon" src={papillon.src}/>
-    <ParallaxFeuille id="feuille1" rotation={44} client:only="solid-js"/>
-    <ParallaxFeuille id="feuille2" rotation={165} client:only="solid-js"/>
-    <ParallaxFeuille id="feuille3" rotation={195} client:only="solid-js"/>
+    <img
+      id="nuage1"
+      src={nuage.src}
+      loading="lazy"
+      alt="Image représentant un nuage"
+      aria-hidden="true"
+      role="presentation"
+    />
+    <img
+      id="nuage2"
+      src={nuage.src}
+      loading="lazy"
+      alt="Image représentant un nuage"
+      aria-hidden="true"
+      role="presentation"
+    />
+    <img
+      id="oiseaux"
+      src={oiseaux.src}
+      loading="lazy"
+      alt="Image représentant une nuée d'oiseaux"
+      aria-hidden="true"
+      role="presentation"
+    />
+    <img
+      id="papillon"
+      src={papillon.src}
+      aria-hidden="true"
+      role="presentation"
+    />
+    <ParallaxFeuille id="feuille1" rotation={44} client:only="solid-js" />
+    <ParallaxFeuille id="feuille2" rotation={165} client:only="solid-js" />
+    <ParallaxFeuille id="feuille3" rotation={195} client:only="solid-js" />
     <slot />
     <Footer />
   </body>
