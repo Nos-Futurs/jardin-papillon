@@ -1,17 +1,20 @@
 ---
 import './Footer.scss';
-import font from '../../assets/font_foret.svg';
+import tree from '../../assets/tree.svg';
+import poule from '../../assets/poule.svg';
+import lapin from '../../assets/lapin.svg';
 ---
 
 <footer>
   <div id="address">
-    <p>Ô LACHAT</p>
+    <p>"Le jardin papillon du Lachat"</p>
+    <p>5 minutes à pied depuis Ô LACHAT</p>
     <p>850 route de LACHAT</p>
     <p>74210 - FAVERGES</p>
   </div>
   <div id="contact">
     <b>Réservations et informations :</b>
-    <p>lejardinpapillon@asso-nature.fr</p>
+
     <p>07 50 23 24 43</p>
   </div>
   <div id="tribute"><p>Site éco-conçu par Nos Futurs</p></div>
@@ -25,4 +28,8 @@ import font from '../../assets/font_foret.svg';
       alt="Ecoindex Badge"
     />
   </a>
+  <img id="tree-left" src={tree.src} />
+  <img id="poule" src={poule.src} />
+  <img id="lapin" src={lapin.src} />
+  <img id="tree-right" src={tree.src} />
 </footer>

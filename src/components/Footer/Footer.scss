@@ -11,11 +11,13 @@ footer {
 
     #address {
         margin: 90px 0 35px 0;
+        padding: 0 30px;
         align-self: center;
         justify-self: center;
         text-align: center;
         color: #e3f1dd;
-
+        position: relative;
+        z-index: 6;
         p {
             margin: 5px;
         }
@@ -23,12 +25,14 @@ footer {
 
     #contact {
         margin: 0 0 35px 0;
+        padding: 0 30px;
         align-self: center;
         justify-self: center;
         text-align: center;
         color: #e3f1dd;
+        z-index: 6;
+        position: relative;
         width: 100%;
-
         p {
             margin: 5px;
         }
@@ -36,20 +40,53 @@ footer {
 
     #tribute {
         margin: 0 0 35px 0;
+        padding: 0 30px;
         align-self: center;
         justify-self: center;
         text-align: center;
         color: #e3f1dd;
         width: 100%;
+        z-index: 6;
+        position: relative;
         p {
             margin: 5px;
         }
     }
-    #ecoindex-badge{
+
+    #ecoindex-badge {
         display: flex;
         justify-content: center;
         width: 100%;
+    }
 
+    #tree-left {
+        position: absolute;
+        bottom: 90px;
+        left: -170px;
+        z-index: 5;
+    }
+
+    #poule {
+        position: absolute;
+        bottom: 40px;
+        left: 110px;
+        z-index: 5;
+        width: 100px;
+    }
+
+    #lapin {
+        position: absolute;
+        bottom: 40px;
+        right: 100px;
+        z-index: 5;
+        width: 100px;
+    }
+
+    #tree-right {
+        position: absolute;
+        bottom: 40px;
+        right: -160px;
+        z-index: 5;
     }
 }
 
@@ -58,6 +95,7 @@ footer {
     footer {
         #address {
             z-index: 11;
+
             p {
                 font-size: 14px;
             }
@@ -65,6 +103,7 @@ footer {
 
         #contact {
             z-index: 11;
+
             p {
                 font-size: 14px;
             }
@@ -72,9 +111,70 @@ footer {
 
         #tribute {
             z-index: 11;
+
             p {
                 font-size: 14px;
             }
+        }
+    }
+}
+
+
+
+
+
+
+@media (max-width: 750px) {
+    footer {
+        #tree-right {
+            display: none;
+        }
+
+        #poule {
+            left: 75px;
+            width: 80px;
+        }
+
+        #lapin {
+            right: 75px;
+            width: 80px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    footer {
+        #tree-left {
+            width: 400px;
+        }
+
+        #poule {
+            left: 40px;
+            width: 50px;
+        }
+
+        #lapin {
+            right: 40px;
+            width: 50px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    footer {
+        #tree-left {
+            left: -120px;
+            width: 300px;
+        }
+
+        #poule {
+            left: 20px;
+            width: 35px;
+        }
+
+        #lapin {
+            right: 20px;
+            width: 35px;
         }
     }
 }
