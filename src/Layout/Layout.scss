@@ -1,8 +1,9 @@
 body {
   margin: 0;
-  font-family:  "Comic Sans MS", "Bradley Hand", "Courier New", "Marker Felt", cursive, sans-serif;
+  font-family: "Comic Sans MS", "Bradley Hand", "Courier New", "Marker Felt", cursive, sans-serif;
   background-color: #e3f1dd;
   min-height: 100vh;
+  width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 150px auto;
@@ -101,6 +102,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 p {
@@ -109,4 +111,190 @@ p {
 
 * {
   box-sizing: border-box;
+}
+
+@media (max-width: 980px) {
+  body {
+    #nuage1 {
+      position: absolute;
+      top: 50px;
+      left: 80px;
+      z-index: 2;
+      width: 200px;
+    }
+
+    #nuage2 {
+      position: absolute;
+      top: 180px;
+      left: 50px;
+      z-index: 5;
+      width: 200px;
+    }
+
+    #oiseaux {
+      position: absolute;
+      top: 60px;
+      left: 80px;
+      z-index: 2;
+      width: 120px;
+    }
+  }
+}
+
+
+@media (max-width: 750px) {
+  body {
+    #tree-right {
+      display: none;
+    }
+
+    #feuille1 {
+      width: 25px;
+    }
+
+    #feuille2 {
+      width: 25px;
+    }
+
+    #feuille3 {
+      width: 25px;
+    }
+
+    #nuage1 {
+      top: 170px;
+      left: 30px;
+      width: 120px;
+    }
+
+    #nuage2 {
+      top: 250px;
+      left: 50px;
+      width: 150px;
+    }
+
+    #oiseaux {
+      top: 260px;
+      left: 50px;
+      z-index: 5;
+      width: 100px;
+    }
+
+    #papillon {
+      top: 160px;
+      width: 90px;
+    }
+
+    #poule {
+      left: 75px;
+      width: 80px;
+    }
+
+    #lapin {
+      right: 75px;
+      width: 80px;
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+  body {
+
+    #feuille1 {
+      left: 80px;
+    }
+
+    #feuille2 {
+      right: 80px;
+    }
+
+    #feuille3 {
+      left: 110px;
+    }
+
+    #tree-left {
+      width: 400px;
+    }
+
+    #poule {
+      left: 40px;
+      width: 50px;
+    }
+
+    #lapin {
+      right: 40px;
+      width: 50px;
+    }
+  }
+}
+
+
+
+@media (max-width: 500px) {
+  body {
+
+    #nuage1 {
+      top: 250px;
+      z-index: 5;
+    }
+
+    #nuage2 {
+      top: 320px;
+    }
+
+    #oiseaux {
+      top: 330px;
+    }
+
+    #papillon {
+      top: 240px;
+      width: 80px;
+    }
+  }
+}
+
+
+@media (max-width: 400px) {
+  body {
+    #tree-left {
+      left: -120px;
+      width: 300px;
+    }
+    #poule {
+      left: 20px;
+      width: 35px;
+    }
+
+    #lapin {
+      right: 20px;
+      width: 35px;
+    }
+  }
+}
+
+
+
+@media (max-width: 350px) {
+  body {
+
+    #nuage1 {
+      top: 60px;
+      z-index: 5;
+    }
+
+    #nuage2 {
+      top: 180px;
+      left: 30px;
+    }
+
+    #oiseaux {
+      top: 190px;
+    }
+
+    #papillon {
+      top: 180px;
+      right: 40px;
+      width: 50px;
+    }
+  }
 }

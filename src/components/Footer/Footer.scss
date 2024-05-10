@@ -3,22 +3,38 @@ footer {
     background-image: url("../../assets/font_foret.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left top;
+    background-position: center top;
     grid-row: 2/4;
     grid-column: 1;
     z-index: 4;
+    padding-bottom: 80px;
 
-    #address{
+    #address {
         margin: 90px 0 35px 0;
         align-self: center;
         justify-self: center;
         text-align: center;
         color: #e3f1dd;
-        p{
+
+        p {
             margin: 5px;
         }
     }
-    #contact{
+
+    #contact {
+        margin: 0 0 35px 0;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+        color: #e3f1dd;
+        width: 100%;
+
+        p {
+            margin: 5px;
+        }
+    }
+
+    #tribute {
         margin: 0 0 35px 0;
         align-self: center;
         justify-self: center;
@@ -29,15 +45,36 @@ footer {
             margin: 5px;
         }
     }
-    #tribute{
-        margin: 0 0 35px 0;
-        align-self: center;
-        justify-self: center;
-        text-align: center;
-        color: #e3f1dd;
+    #ecoindex-badge{
+        display: flex;
+        justify-content: center;
         width: 100%;
-        p {
-            margin: 5px;
+
+    }
+}
+
+
+@media (max-width: 500px) {
+    footer {
+        #address {
+            z-index: 11;
+            p {
+                font-size: 14px;
+            }
+        }
+
+        #contact {
+            z-index: 11;
+            p {
+                font-size: 14px;
+            }
+        }
+
+        #tribute {
+            z-index: 11;
+            p {
+                font-size: 14px;
+            }
         }
     }
 }

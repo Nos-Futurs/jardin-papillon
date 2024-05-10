@@ -1,5 +1,5 @@
 main {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -28,8 +28,8 @@ main {
         z-index: 3;
 
         .arbre_divider {
+            width: 130px;
             align-self: center;
-            height: 30px;
             padding-top: 30px;
         }
 
@@ -80,5 +80,123 @@ main {
             }
         }
 
+    }
+}
+
+
+@media (max-width: 750px) {
+    main {
+        h1 {
+            font-size: 40px;
+            padding: 40px 0 90px 0;
+        }
+
+        #content-container {
+            #subcontent {
+                padding: 0 0 0 70px;
+
+                h2:before {
+                    top: 12.5px;
+                    bottom: auto;
+                }
+
+                .info {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 750px) {
+    main {
+        #content-container {
+            padding: 60px 60px 300px 60px;
+
+            #subcontent {
+                padding: 0 0 0 50px;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        h1 {
+            padding: 40px 40px 90px 40px;
+        }
+
+        #content-container {
+            padding: 60px 60px 400px 60px;
+
+            #subcontent {
+                padding: 0 0 0 0;
+            }
+        }
+
+    }
+}
+
+
+@media (max-width: 400px) {
+    main {
+        #content-container {
+            padding: 60px 40px 200px 40px;
+
+            p {
+                font-size: 15px;
+            }
+
+            #subcontent {
+                padding: 0 0 0 0;
+
+                .info {
+                    margin-left: 0;
+                }
+
+                .info:before {
+                    display: none;
+                }
+
+                h2 {
+                    padding: 30px 0 0 10px;
+                    font-size: 25px;
+                }
+
+                h2:before {
+
+                    height: 35px;
+                    width: 35px;
+                    left: -25px;
+                }
+            }
+        }
+
+    }
+}
+
+
+@media (max-width: 350px) {
+    main {
+
+        h1 {
+            font-size: 25px;
+        }
+
+        #content-container {
+            width: 90%;
+            #subcontent {
+                h2 {
+                    font-size: 18px;
+                }
+
+                .info {
+                    font-size: 15px;
+                }
+            }
+
+        }
     }
 }

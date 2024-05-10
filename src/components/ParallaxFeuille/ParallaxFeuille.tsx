@@ -24,7 +24,7 @@ const ParallaxFeuille: Component<ParallaxFeuilleProps> = (props: ParallaxFeuille
         alt="Feuille qui tombe le long de la page"
         src={feuille.src}
 
-        style={{rotate: `${props.rotation + offsetY() * 0.75}deg`}}
+        style={{rotate: `${props.rotation + offsetY() * 0.5}deg`}}
       />
   );
 };
