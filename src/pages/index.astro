@@ -1,0 +1,68 @@
+---
+import Layout from '../Layout/Layout.astro';
+import arbres from '../assets/arbres.svg';
+import './_index.scss';
+---
+
+<Layout pageTitle="" description="" id="home-page" path="/">
+  <main>
+    <h1>LE JARDIN PAPILLON <br /> DU LACHAT</h1>
+    <div id="content-container">
+      <p>
+        Un jardin-fôret en construction, aménagé et vécu selon les principes de
+        la permaculture, constitué d'espaces de potager, verger, champ, forêt et
+        prairie imbriqués entre eux, parcourus par des poules et des lapins (et
+        bientôt peut être d'autres animaux).
+      </p>
+      <p>
+        Le lieu à vocation à devenir un espace de découverte et de formation,
+        pour apprendre la permaculture et s'émerveiller des multiples bonheurs
+        que peut nous apporter un lien nouveau avec ce qui nous entoure.
+      </p>
+      <p>
+        Un espace de forêt plus ombragé pour faire des activités au frais, un
+        accès possible par le chemin de randonnée, un parcours sensoriel et
+        plusieurs espaces pour développer son imaginaire vous y attendent.
+      </p>
+      <p>
+        La visite du lieu prend la forme d'un parcours en autonomie parsemé de
+        fiches explicatives et de jeux ludiques, à partir desquels des visites
+        encadrées et des anumations plus spécifiques peuvent éclore.
+      </p>
+      <p>
+        En bref un espace ou découvrir une multitude d'écosystèmes, de formes de
+        vies et de façon d'être, et où s'éveiller à l'observation de notre
+        environnement, qu'il soit sauvage ou cultivé.
+      </p>
+      <img src={arbres.src} alt="arbres" class="arbre_divider" />
+      <div id="subcontent">
+        <h2>LA BOUCLE DES SAVOIRS FAIRE</h2>
+        <p>
+          Visite ludique de 30 min permettant d’explorer les différents espaces
+          du terrain. Ce parcours sensoriel vous propose de cheminer entre le
+          potager, le verger, le champ, la forêt et les animaux tout en
+          profitant d’explications sur la permaculture, ses principes et ses
+          pratiques. De quoi éveiller la curiosité des petits et des grands !
+        </p>
+        <p class="info">
+          les mercredis à 14h. Les jeudis et samedis à 16h. Sans réservation !
+        </p>
+        <h2>VISITE ANIMÉE</h2>
+        <p>
+          Visite approfondie d’environ 1h30 permettant d'aller plus en avant
+          dans la découverte des différents éléments du site, les jeux et les
+          explications. Ce format vous propose aussi un atelier pratique : à
+          vous de mettre les mains dans la terre et participer à la vie du
+          Jardin en semant, récoltant, taillant, plantant. Idéal pour apprendre
+          quelques premiers gestes de permaculture et partager votre énergie au
+          lieu !
+        </p>
+        <p class="info">
+          Les jeudis et samedis après-midis. Sur réservation ! Minimum 4
+          personnes
+        </p>
+      </div>
+      <img src={arbres.src} alt="arbres" class="arbre_divider" />
+    </div>
+  </main>
+</Layout>

@@ -1,0 +1,31 @@
+[build]
+    command = 'pnpm run build'
+    functions = "functions"
+    publish = "dist"
+
+[[redirect]]
+    from = "/api/*"
+    to = "/.netlify/functions/:splat"
+    status = 200
+
+[[redirects]]
+  from = "https://gestalt.peharpre.fr/*"
+  to = "https://gestalt.philippe.peharpre.fr/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://gestalt.peharpre.fr/*"
+  to = "https://gestalt.philippe.peharpre.fr/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://gestalt.philippe.peharpre.fr/*"
+  to = "https://gestalt.philippe.peharpre.fr/:splat"
+  status = 301
+  force = true
+
+[dev]
+    targetPort = 4173
+

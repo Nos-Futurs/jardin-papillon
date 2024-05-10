@@ -1,0 +1,7 @@
+user-agent: *
+Disallow: /?blackhole
+Allow: /
+Disallow: /mention-legales*
+Disallow: /404
+
+Sitemap: https://gestalt.philippe.peharpre.fr/sitemap-index.xml

@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family:  "Comic Sans MS", "Bradley Hand", "Courier New", "Marker Felt", cursive, sans-serif;
+  background-color: #e3f1dd;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 150px auto;
+  overflow-x: hidden;
+  position: absolute;
+
+  #papillon {
+    position: absolute;
+    top: 40px;
+    right: 70px;
+    z-index: 2;
+    width: 100px;
+  }
+
+  #nuage1 {
+    position: absolute;
+    top: 30px;
+    left: 120px;
+    z-index: 2;
+    width: 250px;
+  }
+
+  #nuage2 {
+    position: absolute;
+    top: 180px;
+    left: 70px;
+    z-index: 5;
+    width: 200px;
+  }
+
+  #oiseaux {
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    z-index: 2;
+    width: 150px;
+  }
+
+  #tree-left {
+    position: absolute;
+    bottom: 90px;
+    left: -170px;
+    z-index: 5;
+  }
+
+  #poule {
+    position: absolute;
+    bottom: 40px;
+    left: 110px;
+    z-index: 5;
+    width: 100px;
+  }
+
+  #lapin {
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+    z-index: 5;
+    width: 100px;
+  }
+
+  #tree-right {
+    position: absolute;
+    bottom: 40px;
+    right: -160px;
+    z-index: 5;
+  }
+
+  #feuille1 {
+    position: fixed;
+    top: 33%;
+    left: 140px;
+    z-index: 4;
+    width: 35px;
+    rotate: 44deg;
+  }
+
+  #feuille2 {
+    position: fixed;
+    top: 50%;
+    right: 160px;
+    z-index: 4;
+    rotate: 165deg;
+    width: 35px;
+  }
+
+  #feuille3 {
+    position: fixed;
+    top: 75%;
+    left: 190px;
+    rotate: 195deg;
+    z-index: 4;
+    width: 35px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}

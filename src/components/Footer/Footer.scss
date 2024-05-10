@@ -1,0 +1,43 @@
+footer {
+    width: 100vw;
+    background-image: url("../../assets/font_foret.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+    grid-row: 2/4;
+    grid-column: 1;
+    z-index: 4;
+
+    #address{
+        margin: 90px 0 35px 0;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+        color: #e3f1dd;
+        p{
+            margin: 5px;
+        }
+    }
+    #contact{
+        margin: 0 0 35px 0;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+        color: #e3f1dd;
+        width: 100%;
+        p {
+            margin: 5px;
+        }
+    }
+    #tribute{
+        margin: 0 0 35px 0;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+        color: #e3f1dd;
+        width: 100%;
+        p {
+            margin: 5px;
+        }
+    }
+}
