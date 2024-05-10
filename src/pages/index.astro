@@ -1,6 +1,7 @@
 ---
 import Layout from '../Layout/Layout.astro';
 import arbres from '../assets/arbres.svg';
+import ImagesContainer from '../components/ImagesContainer/ImagesContainer';
 import './_index.scss';
 ---
 
@@ -76,6 +77,16 @@ import './_index.scss';
           15personnes, 50€/groupe.
         </p>
       </div>
+      <img
+        src={arbres.src}
+        alt="arbres"
+        class="arbre_divider"
+        loading="lazy"
+        alt="Rangée d'arbre"
+        aria-hidden="true"
+        role="presentation"
+      />
+      <ImagesContainer client:idle/>
       <img
         src={arbres.src}
         alt="arbres"
