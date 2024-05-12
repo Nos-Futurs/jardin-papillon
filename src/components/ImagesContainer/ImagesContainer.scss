@@ -6,8 +6,11 @@
 
     img {
         grid-column: 2;
-        width: 100%;
+        width: auto;
+        max-width: 100%;
         align-self: center;
+        justify-self: center;
+        max-height: 600px;
     }
 
     button {
